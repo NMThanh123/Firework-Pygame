@@ -46,7 +46,7 @@ pygame.quit()
 
 # Brief explanation programe
 ## The program includes 5 classes:
- - Dot: this is the layer to create bright spots in fireworks
+ - Dot: this is the class to create bright spots in fireworks
 - Bullet: creates light spots when starting to fly up from the bottom of the program window
 - BulletFlyUp: used to create movement for light spots when flying
 - FireWork: creates fireworks including Bullets
