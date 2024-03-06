@@ -64,16 +64,16 @@ pygame.mixer.music.set_volume(0.4)
 - When the timer starts counting to 0, a sound will be played
 ```python
 while countdown_time > 0:
-		DISPLAYSURF.fill((0, 0, 0))
-		text = font.render(str(countdown_time), True, (255, 255, 255))
-		text_rect = text.get_rect()
-		text_rect.center = (WINDOWWIDTH/2, WINDOWHEIGHT/2)
-		DISPLAYSURF.blit(text, text_rect)
-		pygame.display.flip()
-		countdown_time -= 1
-		pygame.time.wait(1000)
-		if countdown_time < 1:
-			pygame.mixer.music.play()
+	DISPLAYSURF.fill((0, 0, 0))
+	text = font.render(str(countdown_time), True, (255, 255, 255))
+	text_rect = text.get_rect()
+	text_rect.center = (WINDOWWIDTH/2, WINDOWHEIGHT/2)
+	DISPLAYSURF.blit(text, text_rect)
+	pygame.display.flip()
+	countdown_time -= 1
+	pygame.time.wait(1000)
+	if countdown_time < 1:
+		pygame.mixer.music.play()
 ```
 😋 If you have any question, please don't hesitate to contact me via email: minh9thanh@gmail.com
 # License
